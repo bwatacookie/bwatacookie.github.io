@@ -22,7 +22,8 @@ where AdMob's crawler looks. So the name is load-bearing; don't rename it.
 | `.nojekyll` | Skips GitHub's Jekyll build; these are plain static files |
 
 Keep `privacy.html` and `terms.html` in sync with the copies bundled in each
-game (for Ball Journey: `lib/ui/legal_screen.dart`) and with
+game (for Ball Journey: `lib/ui/legal_screen.dart`; Wordlike opens these two
+pages from its Options screen, see `LegalLinks.cs`) and with
 `store/publisher-pages/` in the game repo.
 
 ## Publishing
@@ -54,7 +55,8 @@ real screenshot whenever you have one worth showing.
 
 ## Open items
 
-- `index.html`: Pixel Breakers' store button is a disabled "Coming soon".
-  Swap in the real store URL and remove `aria-disabled="true"`.
+- `index.html`: the Pixel Breakers and Wordlike store buttons are disabled
+  "Coming soon". Swap in the real store URLs (Wordlike:
+  `com.wordlike.game`) and remove `aria-disabled="true"`.
 - Ball Journey's Play Store link assumes the package id
   `com.games.ball_journey`; it 404s until the listing is public.

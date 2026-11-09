@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bwatacookie Studio — Mobile games</title>
-<meta name="description" content="Bwatacookie Studio builds fast, hand-tuned arcade games for Android and iOS. Ball Journey and Pixel Breakers.">
+<meta name="description" content="Bwatacookie Studio builds fast, hand-tuned arcade games for Android and iOS. Ball Journey, Pixel Breakers and Wordlike.">
 <meta property="og:title" content="Bwatacookie Studio">
 <meta property="og:description" content="Fast, hand-tuned arcade games for mobile.">
 <meta property="og:type" content="website">
@@ -63,6 +63,7 @@
   section { padding: 56px 0; }
   .games { display: grid; gap: 22px; }
   @media (min-width: 820px) { .games { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1180px) { .games { grid-template-columns: 1fr 1fr 1fr; } }
 
   .card {
     position: relative;
@@ -95,6 +96,7 @@
 
   .art-journey { background: linear-gradient(170deg, #15434f 0%, #0b2029 55%, #091318 100%); }
   .art-breakers { background: linear-gradient(170deg, #2f1b4d 0%, #1a1130 55%, #0d0a18 100%); }
+  .art-wordlike { background: radial-gradient(ellipse 80% 90% at 55% 45%, #6a4de0 0%, #3f2f9c 50%, #1f1750 100%); }
 
   .card-body { padding: 24px 24px 26px; display: flex; flex-direction: column; flex: 1; }
   .card h3 {
@@ -177,7 +179,7 @@
     <span class="eyebrow"><span class="pulse"></span>Independent studio</span>
     <h1>Small games,<br><em>tuned to death.</em></h1>
     <p class="lede">
-      We build fast arcade games for Android and iOS — the kind you pick up
+      We build small, fast games for Android and iOS — the kind you pick up
       for one run and put down forty minutes later. Every hazard, every
       millisecond of feedback is hand-tuned until it feels fair.
     </p>
@@ -322,6 +324,63 @@
         </div>
       </article>
 
+      <!-- ---------------- Wordlike ---------------- -->
+      <article class="card">
+        <div class="art art-wordlike">
+          <svg viewBox="0 0 320 200" role="img" aria-label="Wordlike key art: colored letter tiles spelling WORD above a score goal">
+            <g font-family="'Trebuchet MS', 'Segoe UI', system-ui, sans-serif" font-weight="800" text-anchor="middle">
+              <g transform="rotate(-4 60 96)">
+                <rect x="30" y="76" width="60" height="60" rx="15" fill="#a31e4f"/>
+                <rect x="30" y="68" width="60" height="60" rx="15" fill="#e8366d"/>
+                <text x="60" y="110" font-size="40" fill="#ffffff">W</text>
+              </g>
+              <g transform="rotate(3 115 96)">
+                <rect x="90" y="76" width="50" height="50" rx="13" fill="#c98f0b"/>
+                <rect x="90" y="68" width="50" height="50" rx="13" fill="#ffc93c"/>
+                <text x="115" y="104" font-size="34" fill="#2b2350">O</text>
+              </g>
+              <g transform="rotate(-3 172 90)">
+                <rect x="147" y="70" width="50" height="50" rx="13" fill="#2a8fb5"/>
+                <rect x="147" y="62" width="50" height="50" rx="13" fill="#4cc9f0"/>
+                <text x="172" y="98" font-size="34" fill="#2b2350">R</text>
+              </g>
+              <g transform="rotate(4 229 96)">
+                <rect x="204" y="76" width="50" height="50" rx="13" fill="#1b9a6b"/>
+                <rect x="204" y="68" width="50" height="50" rx="13" fill="#35d49a"/>
+                <text x="229" y="104" font-size="34" fill="#2b2350">D</text>
+              </g>
+            </g>
+            <!-- the score goal: a gauge that is almost full -->
+            <rect x="48" y="156" width="224" height="16" rx="8" fill="#140e2c" fill-opacity="0.6"/>
+            <rect x="48" y="156" width="176" height="16" rx="8" fill="#35d49a"/>
+            <circle cx="262" cy="148" r="9" fill="#ffc93c"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3>Wordlike</h3>
+          <div class="tags">
+            <span class="tag">Word roguelike</span>
+            <span class="tag">English &middot; French</span>
+            <span class="tag">Endless</span>
+          </div>
+          <p>
+            Spell the best word you can on a line of bonus slots and hit the
+            score goal before you run out of plays. Every win grows an endless
+            path with a boss every fifth stop, merchants and chests along the
+            way. Buy relics, engrave your letters and take on the daily
+            challenge, the same for every player.
+          </p>
+          <div class="spacer"></div>
+          <div class="links">
+            <!-- No listing yet. When there is, the URL is
+                 play.google.com/store/apps/details?id=com.wordlike.game
+                 and then swap it in and drop aria-disabled. -->
+            <a class="btn" aria-disabled="true" href="#games">Coming soon</a>
+            <a class="btn btn-ghost" href="privacy.html">Privacy</a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
@@ -335,8 +394,8 @@
           just small games shipped when they actually feel good to play.
         </p>
         <p>
-          Ball Journey is built in Flutter and Flame, Pixel Breakers in Unity
-          &mdash; whichever engine suits the game, rather than one house tool
+          Ball Journey is built in Flutter and Flame, Pixel Breakers and
+          Wordlike in Unity &mdash; whichever engine suits the game, rather than one house tool
           forced onto both. Progress, coins and settings stay on your device.
         </p>
       </div>
